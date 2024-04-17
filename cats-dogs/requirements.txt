@@ -6,3 +6,8 @@ kedro-datasets>=1.0; python_version < "3.9"
 kedro-telemetry>=0.3.1
 kedro-viz>=6.7.0
 notebook
+tensorflow
+keras
+pillow
+numpy
+matplotlib
