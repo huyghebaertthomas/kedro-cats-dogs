@@ -13,23 +13,28 @@ preprocessed:
 x_train:
   type: pickle.PickleDataset
   filepath: data/model_input/x_train.pkl
+  backend: pickle
 
 y_train:
   type: pickle.PickleDataset
   filepath: data/model_input/y_train.pkl
+  backend: pickle
 
 x_test:
   type: pickle.PickleDataset
   filepath: data/model_input/x_test.pkl
+  backend: pickle
 
 y_test:
   type: pickle.PickleDataset
   filepath: data/model_input/y_test.pkl
+  backend: pickle
 
 model:
   type: pickle.PickleDataset
   filepath: data/model/model.pkl
+  backend: pickle
 
 evaluation:
-  type: pickle.PickleDataset
-  filepath: data/model/evaluation.pkl
+  type: pillow.ImageDataset
+  filepath: data/model/evaluation.png
