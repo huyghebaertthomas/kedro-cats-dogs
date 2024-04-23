@@ -8,3 +8,4 @@
 6. Create project: `kedro new --name=Cats-Dogs --tools=viz --example=n`
 7. Change context: `cd cats-dogs`
 8. Create pipeline: `kedro pipeline create classification`
+9. Fill in the data catalog
