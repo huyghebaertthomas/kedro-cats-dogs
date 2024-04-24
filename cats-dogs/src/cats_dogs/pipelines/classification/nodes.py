@@ -42,7 +42,7 @@ def build_model() -> Sequential:
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
     return model
 
-def train_model(X_train: np.ndarray, y_train: np.ndarray) -> None:
+def train_model(X_train: np.ndarray, y_train: np.ndarray) -> list:
     model = build_model()
     model.fit(X_train, y_train, epochs=30, batch_size=32, validation_split=0.2, verbose=0)
     weights = model.get_weights()
